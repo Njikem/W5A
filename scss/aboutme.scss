@@ -1,0 +1,29 @@
+@use "header"
+@use "footer"
+
+#main-header{
+    display:grid;
+    background-color:aquamarine;
+    place-items:center;
+    transition: all 1s ease-in-out;
+
+   &:hover{
+    color: red;
+   }
+}
+
+#page-main{
+    display:grid;
+    place-items: center;
+    text-align: center;
+
+    >image{
+        background-color: azure;
+        place-self: center;
+    }
+}
+
+#page-footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
