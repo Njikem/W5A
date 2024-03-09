@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+#header{
+    min-height: 10vh;
+
+    .head{
+
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        background-color: $primaryColor;
+           
+        >h2{
+
+            color: $color;
+            font-family:  sans-serif;
+           
+        }
+        
+       
+}
+
+}

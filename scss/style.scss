@@ -1,0 +1,98 @@
+@use "header" as *;
+@use "variables" as *;
+@use "footer" as *;
+@use "about" as *;
+
+
+footer nav {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  footer nav > a {
+    text-decoration: none;
+    margin: 5px;
+    color: $color1;
+  }
+  footer nav a:hover {
+    color: $color3;
+    font-size: large;
+  }
+
+  
+  
+  
+  #office .image > img {
+    margin-top: 20px;
+  }
+  
+
+
+
+
+#office{
+    min-height: 80vh;
+
+    .image{
+
+        >img{
+            margin-top: 20px;
+        }
+    }
+}
+
+
+/*TABLET*/
+@media only screen and (max-width:768px){
+
+
+    .image img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+
+   
+
+
+    
+}
+
+
+/*End of TABLET*/
+
+
+
+
+
+
+/*DESKTOP*/
+
+
+@media only screen and (min-width:1020px){
+
+
+    .image img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+
+   nav{
+
+    display: flex;
+    align-items: center;
+   }
+   
+
+}
+
+
+
+
+/*End of DESKTOP*/

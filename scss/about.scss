@@ -1,0 +1,87 @@
+@use "header" as *;
+@use "variables" as *;
+@use "footer" as *;
+
+
+
+#main {
+
+    min-height: 80vh;
+
+    .image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    &:hover{
+        font-size: larger;
+    }
+    
+   } 
+
+   
+}
+  footer{
+  
+nav{
+    text-align: center;
+    margin-top: 30px;
+   
+    >a{
+        text-decoration: none;
+        margin: 5px;
+    }
+} 
+
+nav{
+
+    transition: 2s;
+    >a{
+        color: $color1;
+        font-size: medium;
+        font-weight: 800;
+
+        &:hover{
+            color:$bright;
+            font-size: medium;
+        
+        }
+
+    }
+
+    
+}
+
+
+}
+
+
+/*Mobile*/
+
+@media only screen and (min-width:768){
+
+
+
+#header{
+    
+
+    .head{
+        width: 100%;
+    }
+}
+
+
+#main{
+
+    .image img{
+
+      margin-right: 30px;
+
+    }
+}
+
+
+}
+
+/*End of Mobile*/
